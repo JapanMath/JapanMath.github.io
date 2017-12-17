@@ -1,0 +1,741 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #263238;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+@font-face {
+  font-family: arial_amu;
+  src: url(../../assets/fonts/arial_amu.ttf);
+  font-weight: normal; }
+
+#wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#gameContainer {
+  overflow: hidden;
+  width: 1280px;
+  height: 960px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center; }
+  #gameContainer * {
+    font-family: arial_amu, Arian AMU, Arial Unicode, Arial, sans-serif;
+    margin: 0;
+    padding: 0; }
+  #gameContainer.start {
+    background-image: url(../../assets/img/bg.png); }
+  #gameContainer .copyright {
+    position: absolute;
+    font-size: 16px;
+    right: 5px;
+    bottom: 5px;
+    color: #292E32; }
+
+.gameLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+/* loading screen */
+#loadingScreen {
+  background-color: #263238; }
+  #loadingScreen * {
+    position: absolute; }
+  #loadingScreen #loadingBorder {
+    width: 800px;
+    height: 50px;
+    border: 8px solid #B73939;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -25px;
+    border-radius: 5px; }
+    #loadingScreen #loadingBorder #loadingArea {
+      width: 790px;
+      height: 40px;
+      top: 5px;
+      left: 5px; }
+      #loadingScreen #loadingBorder #loadingArea #loadingBar {
+        width: 0%;
+        height: 100%;
+        background: #D14844;
+        background: linear-gradient(135deg, #D14844 0%, #B73939 100%);
+        top: 0;
+        left: 0; }
+    #loadingScreen #loadingBorder #loadingPercent {
+      height: 100%;
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      line-height: 50px;
+      color: #9e2020;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      cursor: default; }
+
+/* game area */
+#gameScreen {
+  width: 1280px;
+  height: 960px;
+  position: relative;
+  margin: 0 auto; }
+
+#gameScreen * {
+  position: absolute;
+  z-index: 10; }
+
+#gameScreen .title {
+  width: 100%;
+  text-align: center;
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: 600;
+  top: 30px;
+  color: #28353B; }
+
+#gameScreen .area {
+  width: 1200px;
+  height: 600px;
+  background-color: rgba(40, 53, 59, 0.7);
+  top: 150px;
+  left: 40px;
+  border-radius: 10px; }
+  #gameScreen .area * {
+    position: relative; }
+  #gameScreen .area .choose,
+  #gameScreen .area .timer,
+  #gameScreen .area .count {
+    margin: 10px 0 0 50px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #7ec1c9; }
+  #gameScreen .area .timer span.red {
+    color: #e33d41; }
+  #gameScreen .area .complexity {
+    margin-top: 20px; }
+  #gameScreen .area a.alarm {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #7EC1C9;
+    cursor: pointer;
+    text-decoration: none; }
+  #gameScreen .area .skill {
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    width: 154px;
+    height: 154px;
+    float: left;
+    background-color: #7EC1C9;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 3px solid #28353b; }
+    #gameScreen .area .skill:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: 17px;
+      width: 120px;
+      height: 95px;
+      background-image: url(../../assets/img/brain.png);
+      background-size: 840px 95px; }
+    #gameScreen .area .skill .info {
+      display: block;
+      position: absolute;
+      bottom: -60px;
+      width: 140px;
+      left: 7px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      font-size: 28px;
+      line-height: 50px;
+      text-align: center;
+      color: #7EC1C9; }
+    #gameScreen .area .skill:nth-child(2):after {
+      background-position-x: -120px; }
+    #gameScreen .area .skill:nth-child(3):after {
+      background-position-x: -240px; }
+    #gameScreen .area .skill:nth-child(4):after {
+      background-position-x: -360px; }
+    #gameScreen .area .skill:nth-child(5):after {
+      background-position-x: -480px; }
+    #gameScreen .area .skill:nth-child(6):after {
+      background-position-x: -600px; }
+    #gameScreen .area .skill:nth-child(7):after {
+      background-position-x: -720px; }
+    #gameScreen .area .skill:hover {
+      background-color: #9ee0e8; }
+      #gameScreen .area .skill:hover .info {
+        color: #9ee0e8; }
+  #gameScreen .area .man {
+    height: 400px;
+    width: 197px;
+    background-image: url(../../assets/img/man.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 322px;
+    left: 501px; }
+  #gameScreen .area #task {
+    height: 150px;
+    width: 1000px;
+    background-color: rgba(40, 53, 59, 0.8);
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #E33D41; }
+    #gameScreen .area #task.true {
+      color: #00ff16; }
+  #gameScreen .area #home {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-image: url(../../assets/img/home.png);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    cursor: pointer; }
+  #gameScreen .area #numTab {
+    position: absolute;
+    bottom: 80px; }
+    #gameScreen .area #numTab .num {
+      cursor: pointer;
+      position: relative;
+      height: 90px;
+      width: 90px;
+      background-color: #7EC1C9;
+      float: left;
+      margin-left: 27px;
+      border-radius: 5px;
+      line-height: 90px;
+      font-size: 70px;
+      text-align: center;
+      color: #28353B; }
+      #gameScreen .area #numTab .num:hover {
+        background-color: #9ee0e8; }
+      #gameScreen .area #numTab .num.false {
+        -webkit-animation: shake 0.17s linear forwards 3;
+                animation: shake 0.17s linear forwards 3; }
+
+#gameScreen.touchScreen .area #numTab .num:hover {
+  background-color: #7EC1C9; }
+
+#gameScreen.touchScreen .area .skill:hover {
+  background-color: #7EC1C9; }
+  #gameScreen.touchScreen .area .skill:hover .info {
+    color: #7EC1C9; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
